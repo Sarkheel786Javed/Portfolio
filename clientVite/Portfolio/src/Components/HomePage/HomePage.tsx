@@ -1,24 +1,8 @@
 import { useEffect, useState } from "react";
 import EdgeImage from "../../assets/me_img.png";
 import "./homepage.css";
-import { styled } from "@mui/material/styles";
-import LinearProgress, {
-  linearProgressClasses,
-} from "@mui/material/LinearProgress";
 
 function HomePage() {
-  const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
-    height: 10,
-    borderRadius: 5,
-    [`&.${linearProgressClasses.colorPrimary}`]: {
-      backgroundColor:
-        theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
-    },
-    [`& .${linearProgressClasses.bar}`]: {
-      borderRadius: 5,
-      backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
-    },
-  }));
 
   const AnimatedRecords = (value: number) => {
     const [animatedValue, setAnimatedValue] = useState(0);

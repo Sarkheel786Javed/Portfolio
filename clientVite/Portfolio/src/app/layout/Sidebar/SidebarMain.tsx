@@ -1,20 +1,20 @@
-import {
-  CDBSidebar,
-  CDBSidebarContent,
-  CDBSidebarFooter,
-  CDBSidebarHeader,
-  CDBSidebarMenu,
-  CDBSidebarMenuItem,
-} from 'cdbreact';
-import { Link } from 'react-router-dom';
-import { dataSide } from './SidebarItems/SideBarItems';
+// import {
+//   CDBSidebar,
+//   CDBSidebarContent,
+//   CDBSidebarFooter,
+//   CDBSidebarHeader,
+//   CDBSidebarMenu,
+//   CDBSidebarMenuItem,
+// } from 'cdbreact';
+// import { Link } from 'react-router-dom';
+// import { dataSide } from './SidebarItems/SideBarItems';
 
 const Sidebar = () => {
   return (
     <div
       style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
     >
-      <CDBSidebar>
+      {/* <CDBSidebar>
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a
             href="/"
@@ -44,7 +44,7 @@ const Sidebar = () => {
             Sidebar Footer
           </div>
         </CDBSidebarFooter>
-      </CDBSidebar>
+      </CDBSidebar> */}
     </div>
   );
 
