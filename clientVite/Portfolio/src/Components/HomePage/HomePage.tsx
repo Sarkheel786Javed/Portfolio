@@ -25,9 +25,9 @@ function HomePage() {
           requestAnimationFrame(animate);
         }
       };
-
+ 
       requestAnimationFrame(animate);
-    }, [value]);
+    }, [value]); 
 
     return (
       <div className="border border-light p-1 d-flex justify-content-center align-items-center">
