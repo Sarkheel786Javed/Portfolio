@@ -50,11 +50,14 @@ const registerController = async (req, res) => {
       email,
       password: hashedPassword,
     }).save();
-
+   //token
+   const token = await JWT.sign({ _id: user._id }, process.env.JWT_SECRET, {
+    expiresIn: "7d",
+  });
     res.status(200).send({
       success: true,
       message: "User Register Successfully",
-      user,
+      user: token,
     });
   } catch (error) {
     console.log(error);
@@ -99,15 +102,6 @@ const loginController = async (req, res) => {
     res.status(200).send({
       success: true,
       message: "login successfully",
-      user: {
-        _id: user._id,
-        fullName: user.fullName,
-        phoneNo: user.phoneNo,
-        answer: user.answer,
-        email: user.email,
-        password: user.password,
-        role: user.role,
-      },
       token,
     });
   } catch (error) {
@@ -119,8 +113,6 @@ const loginController = async (req, res) => {
     });
   }
 };
-
-//forgotPasswordController
 
 const forgotPasswordController = async (req, res) => {
   try {
