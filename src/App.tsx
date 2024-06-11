@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename="/Sarkheel786Javed">
+      <BrowserRouter basename="/Sarkheel786Javed/Portfolio/">
       <Routes>
         <Route  path='/' element={<Layout><HomePage/></Layout>}/>
         <Route  path='/skills' element={<Layout><Skills/></Layout>}/>
