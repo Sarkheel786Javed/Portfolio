@@ -1,0 +1,9 @@
+[build]
+  base = ""  # Ensure this is correct, usually the root directory
+  publish = "dist"  # Directory to publish
+  command = "npm run build"  # Command to build your project
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
