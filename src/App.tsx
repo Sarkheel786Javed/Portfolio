@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Sarkheel786Javed">
       <Routes>
         <Route  path='/' element={<Layout><HomePage/></Layout>}/>
         <Route  path='/skills' element={<Layout><Skills/></Layout>}/>
